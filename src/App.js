@@ -1,5 +1,6 @@
 import React from "react";
 import PersonList from "./PersonList";
+import PersonPost from "./PersonPost";
 import "./styles.css";
 
 export default function App() {
@@ -9,6 +10,9 @@ export default function App() {
       <h2>GET</h2>
       <h4>from - jsonplaceholder </h4>
       <PersonList />
+
+      <br />
+      <PersonPost />
     </div>
   );
 }
