@@ -1,4 +1,5 @@
 import React from "react";
+import PersonDelete from "./PersonDelete";
 import PersonList from "./PersonList";
 import PersonPost from "./PersonPost";
 import "./styles.css";
@@ -13,6 +14,8 @@ export default function App() {
 
       <br />
       <PersonPost />
+      <br />
+      <PersonDelete />
     </div>
   );
 }
