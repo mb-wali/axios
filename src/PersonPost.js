@@ -17,13 +17,11 @@ export default class PersonList extends React.Component {
       name: this.state.name
     };
 
-    axios
-      .post(`https://jsonplaceholder.typicode.com/users`, { user })
-      .then((res) => {
-        console.log(res);
-        console.log(res.data);
-        alert("Created", res.data);
-      });
+    axios.post(process.env.POST_JSON_URL, { user }).then((res) => {
+      console.log(res);
+      console.log(res.data);
+      alert("Created", res.data);
+    });
   };
 
   render() {
